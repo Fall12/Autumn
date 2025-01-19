@@ -9,11 +9,16 @@ struct MainView: View {
         NavigationView {
             VStack {
                 if scannedImages.isEmpty {
-                    ContentUnavailableView(
-                        "没有扫描文档",
-                        systemImage: "doc.text.viewfinder",
-                        description: Text("点击下方按钮开始扫描")
-                    )
+                    VStack(spacing: 20) {
+                        Image(systemName: "doc.text.viewfinder")
+                            .font(.system(size: 60))
+                            .foregroundColor(.gray)
+                        Text("没有扫描文档")
+                            .font(.title2)
+                        Text("点击下方按钮开始扫描")
+                            .foregroundColor(.gray)
+                    }
+                    .padding()
                 } else {
                     ScrollView {
                         LazyVGrid(columns: [GridItem(.adaptive(minimum: 160))], spacing: 20) {
@@ -91,6 +96,8 @@ struct ScannerView: UIViewControllerRepresentable {
     }
 }
 
-#Preview {
-    MainView()
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        MainView()
+    }
 }
