@@ -14,6 +14,7 @@
 		ACCD11E12D3BF3C9002E807B /* AutumnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD11E02D3BF3C9002E807B /* AutumnTests.swift */; };
 		ACCD11EB2D3BF3C9002E807B /* AutumnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD11EA2D3BF3C9002E807B /* AutumnUITests.swift */; };
 		ACCD11ED2D3BF3C9002E807B /* AutumnUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD11EC2D3BF3C9002E807B /* AutumnUITestsLaunchTests.swift */; };
+		ACCD11FB2D3BF446002E807B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCD11FA2D3BF446002E807B /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		ACCD11E62D3BF3C9002E807B /* AutumnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutumnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCD11EA2D3BF3C9002E807B /* AutumnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutumnUITests.swift; sourceTree = "<group>"; };
 		ACCD11EC2D3BF3C9002E807B /* AutumnUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutumnUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACCD11FA2D3BF446002E807B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		ACCD11CE2D3BF3C7002E807B /* Autumn */ = {
 			isa = PBXGroup;
 			children = (
+				ACCD11F92D3BF42F002E807B /* views */,
 				ACCD11CF2D3BF3C7002E807B /* AutumnApp.swift */,
 				ACCD11D12D3BF3C7002E807B /* ContentView.swift */,
 				ACCD11D32D3BF3C8002E807B /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				ACCD11EC2D3BF3C9002E807B /* AutumnUITestsLaunchTests.swift */,
 			);
 			path = AutumnUITests;
+			sourceTree = "<group>";
+		};
+		ACCD11F92D3BF42F002E807B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				ACCD11FA2D3BF446002E807B /* MainView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACCD11D22D3BF3C7002E807B /* ContentView.swift in Sources */,
+				ACCD11FB2D3BF446002E807B /* MainView.swift in Sources */,
 				ACCD11D02D3BF3C7002E807B /* AutumnApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +442,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.Autumn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fall.ye.autumn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -459,7 +471,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = test.Autumn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fall.ye.autumn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
